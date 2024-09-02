@@ -42,6 +42,8 @@ workflow wf_rna {
         String? soloBarcodeMate # 2 for SHARE
         String? soloCBposition # 1_-83_1_-76 1_-45_1_-38 1_-7_1_0 for SHARE
         String? clip5pNbases  # 0 34 for SHARE
+        String? limitBAMsortRAM = "31232551044"
+
         # Runtime parameters
         Int? align_cpus
         Float? align_disk_factor
@@ -95,6 +97,7 @@ workflow wf_rna {
             soloBarcodeMate = soloBarcodeMate,
             soloCBposition = soloCBposition,
             clip5pNbases = clip5pNbases,
+            limitBAMsortRAM=limitBAMsortRAM,
             genome_name = genome_name,
             genome_index_tar = idx_tar,
             prefix = prefix,

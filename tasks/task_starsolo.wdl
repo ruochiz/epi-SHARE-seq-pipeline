@@ -32,6 +32,7 @@ task rna_align {
         String? soloBarcodeMate
         String? clip5pNbases  # 39 0
         String? soloCBposition = "1_-83_1_-76 1_-45_1_-38 1_-7_1_0"
+        String? limitBAMsortRAM = "31232551044"
 
         Int? outFilterScoreMin
         Int? winAnchorMultimapNmax
@@ -119,7 +120,7 @@ task rna_align {
             ~{"--winAnchorMultimapNmax " + winAnchorMultimapNmax} \
             ~{"--outFilterScoreMin " + outFilterScoreMin} \
             --outSAMtype BAM SortedByCoordinate \
-            --limitBAMsortRAM 31232551044 \
+            --limitBAMsortRAM ~{limitBAMsortRAM} \
             --outSAMattributes CR UR CY UY CB UB NH HI AS nM MD GX GN gx gn \
             --outReadsUnmapped Fastx \
             --outFileNamePrefix result/ \
