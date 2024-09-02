@@ -1,15 +1,11 @@
 version: 1.2
 workflows:
-   - name: "Combinomics"
+   - name: "rz_test_star_solo"
      subclass: WDL
      primaryDescriptorPath: /combinomics.wdl
      filters:  # Only develop or master branches and localAligner/** tags
          branches:
-             - rc-v2.0.0
              - dev
-             - chromap-v2
-             - dev-snapatac
-             - chromap-read-format-memory
          tags:
              - /.*/
 
@@ -19,7 +15,6 @@ workflows:
      filters:  # Only develop or master branches and localAligner/** tags
          branches:
              - dev
-             - rc-v2.0.0
          tags:
              - /.*/
 
@@ -29,7 +24,6 @@ workflows:
      filters:  # Only develop or master branches and localAligner/** tags
          branches:
              - dev
-             - rc-v2.0.0
          tags:
              - /.*/
 
@@ -39,7 +33,6 @@ workflows:
      filters:  # Only develop or master branches and localAligner/** tags
          branches:
              - dev
-             - rc-v2.0.0
          tags:
              - /.*/
 
@@ -49,7 +42,6 @@ workflows:
      filters:  # Only develop or master branches and localAligner/** tags
          branches:
              - dev
-             - rc-v2.0.0
          tags:
              - /.*/
 
@@ -59,6 +51,5 @@ workflows:
      filters:  # Only develop or master branches and localAligner/** tags
          branches:
              - dev
-             - rc-v2.0.0
          tags:
              - /.*/
