@@ -5,12 +5,7 @@ workflows:
      primaryDescriptorPath: /combinomics.wdl
      filters:  # Only develop or master branches and localAligner/** tags
          branches:
-             - rc-v2.0.0
              - dev
-             - chromap-v2
-             - dev-snapatac
-             - chromap-read-format-memory
-             - IGVF-variant-jamboree
          tags:
              - /.*/
 
@@ -20,7 +15,6 @@ workflows:
      filters:  # Only develop or master branches and localAligner/** tags
          branches:
              - dev
-             - rc-v2.0.0
          tags:
              - /.*/
 
@@ -30,7 +24,6 @@ workflows:
      filters:  # Only develop or master branches and localAligner/** tags
          branches:
              - dev
-             - rc-v2.0.0
          tags:
              - /.*/
 
@@ -40,7 +33,6 @@ workflows:
      filters:  # Only develop or master branches and localAligner/** tags
          branches:
              - dev
-             - rc-v2.0.0
          tags:
              - /.*/
 
@@ -50,7 +42,6 @@ workflows:
      filters:  # Only develop or master branches and localAligner/** tags
          branches:
              - dev
-             - rc-v2.0.0
          tags:
              - /.*/
 
@@ -60,7 +51,6 @@ workflows:
      filters:  # Only develop or master branches and localAligner/** tags
          branches:
              - dev
-             - rc-v2.0.0
          tags:
              - /.*/
 
