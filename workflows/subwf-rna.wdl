@@ -43,7 +43,7 @@ workflow wf_rna {
         String? soloCBposition # 1_-83_1_-76 1_-45_1_-38 1_-7_1_0 for SHARE
         String? clip5pNbases  # 0 34 for SHARE
         String? limitBAMsortRAM = "31232551044"
-        string? limitOutSJcollapsed = "4000000"
+        String? limitOutSJcollapsed = "4000000"
         # Runtime parameters
         Int? align_cpus
         Float? align_disk_factor

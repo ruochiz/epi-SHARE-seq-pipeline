@@ -33,7 +33,7 @@ task rna_align {
         String? clip5pNbases  # 39 0
         String? soloCBposition = "1_-83_1_-76 1_-45_1_-38 1_-7_1_0"
         String? limitBAMsortRAM = "31232551044"
-        string? limitOutSJcollapsed = "4000000"
+        String? limitOutSJcollapsed = "4000000"
 
         Int? outFilterScoreMin
         Int? winAnchorMultimapNmax
