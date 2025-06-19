@@ -1,6 +1,6 @@
 version: 1.2
 workflows:
-   - name: "Combinomics"
+   - name: "RZ_custom_Combinomics"
      subclass: WDL
      primaryDescriptorPath: /combinomics.wdl
      filters:  # Only develop or master branches and localAligner/** tags
