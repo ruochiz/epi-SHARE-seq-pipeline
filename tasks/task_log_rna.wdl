@@ -76,7 +76,7 @@ task log_rna {
         File rna_qc_metrics = "${prefix}_rna_qc_metrics.csv"
 
         # STARsolo alignment log statistics
-        Int rna_input_reads = read_int("input_reads.txt")
+        Int rna_input_reads = Int(read_string("input_reads.txt"))
         Int rna_aligned_reads = read_int("aligned_reads.txt")
         Int rna_aligned_uniquely = read_int("aligned_uniquely.txt")
         Int rna_aligned_multimap = read_int("aligned_multimap.txt")
