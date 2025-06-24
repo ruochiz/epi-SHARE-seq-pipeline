@@ -8,6 +8,14 @@ workflows:
              - dev
          tags:
              - /.*/
+   - name: "RZ_Combinomics-starsolo-rna-bam"
+     subclass: WDL
+     primaryDescriptorPath: /workflows/subwf-rna_bam.wdl
+     filters:  # Only develop or master branches and localAligner/** tags
+         branches:
+             - dev
+         tags:
+             - /.*/
 
    - name: "Combinomics-peak-to-gene"
      subclass: WDL
